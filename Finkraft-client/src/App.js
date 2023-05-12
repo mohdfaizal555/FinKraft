@@ -26,7 +26,7 @@ const App = () => {
    //Can integrate by adding loading state etc.. 
 
   const getUserDetails = async () => {
-    const result = await axios.get("http://localhost:5000/api/get");
+    const result = await axios.get("https://finkraft-server.onrender.com/api/get");
     try {
       setData(result.data);
     } catch (err) {
